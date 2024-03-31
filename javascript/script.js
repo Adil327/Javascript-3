@@ -1,5 +1,10 @@
 let cities = ["Faisalabad", "Lahore", "Karachi", "Islamabad", "Peshawar", "Shaikhupura", "Kashmir"]
 
+// Clear Input Text
+
+function clearInput(){
+    document.getElementById("clear-input-btn").innerHTML = " ";
+}
 // Clear Output Button
 function clearOutput(){
     document.getElementById("output-div").innerHTML = " ";
