@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #1d3557;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#btn-div button {
+    min-width: 45%;
+}
+
+#output-div {
+    min-height: 161px;
+}
+
+header,
+footer,
+#original-string {
+    background-color: var(--primary-color);
+}
+
+
+@media only screen and (max-width:550px) {
+    #btn-div button {
+        min-width: 90%;
+    }
+}
