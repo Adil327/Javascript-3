@@ -1,23 +1,23 @@
-let cities = ["Faisalabad", "Lahore", "Karachi", "Islamabad", "peshawar", "Shekhupura", "Kashmir"]
+let cities = ["Faisalabad", "Lahore", "Karachi", "Islamabad", "Peshawar", "Shaikhupura", "Kashmir"]
 
-// clear output button 
+// Clear Output Button 
 function clearOutput() {
     document.getElementById("output").innerHTML = " "
 }
 
-// simple alert 
+// Simple Alert 
 function simpleAlert() {
-    alert("alert button is clicked")
+    alert("Alert Button is Clicked")
     document.getElementById("output").innerHTML = "Alert button is clicked"
 }
 
-// print my name 
+// Print My Name 
 function printName() {
     let userName = prompt("please enter your name")
     document.getElementById("output").innerHTML = userName;
 }
 
-// print all cities 
+// Print All Cities 
 function printAllCities() {
     document.getElementById("output").innerHTML = " "
     for (let i = 0; i < cities.length; i++) {
@@ -25,7 +25,7 @@ function printAllCities() {
     }
 }
 
-// add city in list 
+// Add Cities in the List  
 function addCity() {
     document.getElementById("output").innerHTML = " "
     let newCity = prompt("please enter city name you want to add")
@@ -36,7 +36,7 @@ function addCity() {
     }
 }
 
-// generate table 
+// Generate Table
 function generateTable() {
     tableNumber = +prompt("please enter table number that use want to generate")
     document.getElementById("output").innerHTML = `<h3>Table of ${tableNumber}<h3/> <hr />`
