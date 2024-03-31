@@ -22,7 +22,6 @@ footer,
     background-color: var(--primary-color);
 }
 
-
 @media only screen and (max-width:550px) {
     #btn-div button {
         min-width: 90%;

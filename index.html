@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col text-center">
-                    <h4>Chapter # 15-20 | Arrays: It's Methods & for loops</h4>
+                    <h3>Chapter # 15-20 | Arrays: It's Methods & for loops</h3>
                 </div>
             </div>
             <hr>
@@ -52,16 +52,18 @@
             <!-- Input Div -->
             <div class="row mt-5">
                 <div class="col-12 col-md-6">
-                    <h3 class="text-center">Input</h3>
+                    <h4 class="text-center">Input</h4>
                     <div class="border border-secondary h-75 rounded-3 py-3 d-flex align-items-center">
                         <div class="input-group mx-3">
-                            <input type="text" class="form-control bg-transparent" placeholder="Type your text here">
-                            <button class="btn btn-outline-secondary" id="clear-input-btn">Clear</button>
+                            <input type="text" aria-placeholder="Please write your text here." class="form-control w-75 d-inline" id="input" />
+                            <button class="btn btn-outline-secondary" onclick="clearInput()">
+                                Clear
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mt-4 mt-md-0">
-                    <h3 class="text-center">Original String</h3>
+                    <h4 class="text-center">Original String</h4>
                     <div class="border border-secondary h-75 rounded-3 py-3 px-5 d-flex align-items-center text-white"
                         id="original-string">
                         <div class="text-center">
@@ -78,7 +80,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-12 col-md-6 text-center">
-                    <h3>Button</h3>
+                    <h4>Buttons</h4>
                     <div class="border border-secondary rounded-3 mb-0" id="btn-div">
                         <div class="col">
                             <button class="btn btn-danger mb-2 mt-md-3 mt-3" onclick="simpleAlert()">Simple
@@ -93,9 +95,11 @@
 
                 <!-- Output Div -->
                 <div class="col-12 col-md-6 mt-3 mt-md-0 text-center">
-                    <h3>Output / Result</h3>
+                    <h4>Output / Result</h4>
                     <div class="border border-secondary rounded-3 p-4" id="output-div">
                     </div>
+
+                    <!-- Clear Output -->
                     <button class="btn btn-outline-secondary text-capitalize mt-3" onclick="clearOutput()">Clear
                         Output</button>
                 </div>

@@ -2,9 +2,11 @@ let cities = ["Faisalabad", "Lahore", "Karachi", "Islamabad", "Peshawar", "Shaik
 
 // Clear Input Text
 
-function clearInput(){
+function clearInput() {
+    document.getElementById("input").value = " ";
     document.getElementById("clear-input-btn").innerHTML = " ";
 }
+
 // Clear Output Button
 function clearOutput(){
     document.getElementById("output-div").innerHTML = " ";
@@ -12,8 +14,8 @@ function clearOutput(){
 
 // Simple Alert 
 function simpleAlert() {
-    alert("Alert Button is Clicked");
-    document.getElementById("output-div").innerHTML = "Alert button is Clicked";
+    alert("Simple Alert button is clicked");
+    document.getElementById("output-div").innerHTML = "Simple Alert button is clicked";
 }
 
 // Print My Name 
@@ -42,11 +44,19 @@ function addCity() {
 }
 
 // Generate Table
+
 function generateTable() {
-    tableNumber = +prompt("Please Enter The Table Number That You Want to Generate")
-    document.getElementById("output-div").innerHTML = `<h3>Table of ${tableNumber}<h3/> <hr />`
-    for (let i = 1; i < 11; i++) {
-        let table = tableNumber + " * " + i + " = " + tableNumber * i + "<br />"
-        document.getElementById("output-div").innerHTML += table;
+    let num = +prompt("Pleae Enter the Number, You Want to Generate Table");
+
+    if (!isNaN(num)) {
+        document.getElementById("output-div").innerHTML =
+            "<h2 class='text-primary'>Table of" + " " + num + "</h2>";
+
+        for (let i = 1; i <= 10; i++) {
+            document.getElementById("output-div").innerHTML +=
+                num + " * " + i + " = " + num * i + "<br>";
+        }
+    } else {
+        alert("Please, Enter a Number");
     }
 }
